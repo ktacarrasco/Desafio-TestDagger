@@ -8,24 +8,28 @@ public class Clase {
 
     private static final String TAG = "probando";
     private String Texto;
-    private Concepto concepto;
+    private Conceptos conceptos;
     private Conclusion conclusion;
     private Curso curso;
+
+
     @Inject
-    public Clase(String texto, Concepto concepto, Conclusion conclusion, Curso curso) {
-        Texto = texto;
-        this.concepto = concepto;
+    public Clase(Conceptos conceptos, Conclusion conclusion, Curso curso) {
+        this.conceptos = conceptos;
         this.conclusion = conclusion;
         this.curso = curso;
     }
 
-
-
     public void lineClase(){
         Log.d(TAG, "Estoy");
-        concepto.lineConcepto();
+        conceptos.lineConcepto();
         conclusion.lineConclusion();
         curso.lineCurso();
+    }
+
+    public String lineaClase() {
+        return "Con este curso de arquitectura de desafío latam" + conceptos.lineaConceptos() + conclusion.lineaConclusion()
+                + curso.lineaCurso();
     }
 
 

@@ -7,4 +7,6 @@ import dagger.Component;
 @Component
 public interface IAppComponent {
 
+    Clase getClase();
+
 }

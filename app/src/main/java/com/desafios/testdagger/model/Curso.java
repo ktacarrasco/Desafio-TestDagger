@@ -7,13 +7,18 @@ import javax.inject.Inject;
 public class Curso {
 
     private static final String TAG = "probando";
-    private String Texto;
+
     @Inject
-    public Curso(String texto) {
-        Texto = texto;
+    public Curso() {
+
     }
+
 
     public void lineCurso(){
         Log.d(TAG, "mensajes");
+    }
+
+    public String lineaCurso() {
+        return "   y estoy satisfechos con este comienzo" ;
     }
 }

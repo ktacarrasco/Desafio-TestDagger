@@ -4,18 +4,23 @@ import android.util.Log;
 
 import javax.inject.Inject;
 
-public class Concepto {
+public class Conceptos {
 
     private static final String TAG = "probando";
-    private String Texto;
+
     @Inject
-    public Concepto(String texto) {
-        Texto = texto;
+    public Conceptos() {
+
     }
+
 
     public void lineConcepto (){
         Log.d(TAG, "probando");
 
+    }
+
+    public String lineaConceptos() {
+        return "  he aprendido nuevos conceptos en esta materia" ;
     }
 
 }

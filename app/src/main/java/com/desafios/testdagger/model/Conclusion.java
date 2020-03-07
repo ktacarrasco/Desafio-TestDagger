@@ -7,15 +7,20 @@ import javax.inject.Inject;
 public class Conclusion {
 
     private static final String TAG = "probando";
-    private String Texto;
 
     @Inject
-    public Conclusion(String texto) {
-        Texto = texto;
+    public Conclusion() {
+
     }
+
+
+
 
     public void lineConclusion(){
         Log.d(TAG, "los");
 
+    }
+    public String lineaConclusion() {
+        return "   y con este buen grupo, me siento motivado" ;
     }
 }
